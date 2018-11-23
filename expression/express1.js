@@ -1,4 +1,4 @@
-const foo = function test1(b) { return typeof(b) };
+const foo = function test1(b) { return typeof(test1) };
 let foo3 = foo;
 
 
