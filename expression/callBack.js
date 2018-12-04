@@ -3,9 +3,6 @@ function callWhat(p1, p2, f1) {
     f1()
 }
 
-// function what(){
-//     console.log('this is function')
-// }
 let what = function(){
     return test = 'string'
 };

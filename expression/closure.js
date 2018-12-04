@@ -6,7 +6,7 @@ function mutiply(left_number) {
 
 let second = function (){
     console.log('test')
-}
+};
 
 first = mutiply(5);
 console.log(first);

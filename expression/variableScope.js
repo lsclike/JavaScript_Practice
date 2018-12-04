@@ -1,12 +1,19 @@
-// var x = 'out side';
+var x = 'out side';
+console.log(c);
+var c = () => {
+    console.log()
+}
 let f1 = function () {
-    console.log(x);
-    var x = 'inside'
+    y = () => {
+        console.log()
+    }
 };
+
 
 let f2 = function() {
     x = 'inside'
 }
 
 f1();
+
 

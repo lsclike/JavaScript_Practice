@@ -6,7 +6,7 @@ console.log(test);
 
 
 result = map(f, [1, 2, 3]);
-console.log(result)
+console.log(result);
 function map(f, a) {
     var result = []; // Create a new Array
     var i; // Declare variable
