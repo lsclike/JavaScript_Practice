@@ -30,10 +30,6 @@ let t1 = {
     name: 'not',
     age: 123
 };
-
-let t2 = {
-    name: 'not',
-    age: 123
-};
+let t2 = null;
 let result = deepCompare(t1, t2);
 console.log(result);
