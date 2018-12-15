@@ -15,19 +15,20 @@
 // };
 //
 // let fuzzy = new Rabbit("fuzzy");
+// fuzzy.talk();
 //
 // console.log(fuzzy instanceof Rabbit);
 // console.log(Object.getPrototypeOf(Rabbit));
 // console.log(Object.getPrototypeOf(Rabbit.prototype));
 // console.log(Rabbit.prototype);
 
-function Human(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.fullName = () => {
-        return this.firstName + this.lastName;
-    }
-}
+// function Human(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.fullName = () => {
+//         return this.firstName + this.lastName;
+//     }
+// }
 
 Human.prototype.fullName = function () {
   return this.lastName + this.firstName;
