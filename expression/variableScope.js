@@ -1,21 +1,21 @@
 var x = 'out side';
-console.log(c);
-console.log(y);
 var c = () => {
     console.log()
-}
+};
+
 let f1 = function () {
     console.log(y);
     y = () => {
         console.log()
     }
 };
-
-
-let f2 = function() {
-    x = 'inside'
+console.log(y)
+// y can be accessed in the global context only after the function has been executed
+function f2() {
+    x = 'inside';
+    y = 'local variable without any decoration become global'
 };
-
-f1();
-
+f2();
+console.log(x);
+console.log(y);
 
