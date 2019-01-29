@@ -1121,4 +1121,4 @@ var SCRIPTS = [
 //     module.exports = SCRIPTS;
 // if (typeof global !== "undefined" && !global.SCRIPTS)
 //     global.SCRIPTS = SCRIPTS;
-module.exports = SCRIPTS
+module.exports = SCRIPTS;

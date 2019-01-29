@@ -16,7 +16,7 @@ class VillageState {
                 }).filter( p => p.place !== p.address);
             return new VillageState(destination, parcels);
         }
-
     }
-    for (let test = 0;; test++ )
 }
+
+module.exports = VillageState;

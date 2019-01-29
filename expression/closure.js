@@ -8,5 +8,5 @@ let second = function (){
     console.log('test')
 };
 
-first = mutiply(5);
+first = mutiply(5)(4);
 console.log(first);
