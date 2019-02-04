@@ -1,41 +1,15 @@
-// function Rabbit(type, age) {
-//     this.type = type;
-//     this.age = age;
-//     this.talk = function () {
-//         console.log('what ?')
-//     }
-// }
-//
-// Rabbit.prototype.talk = function(line) {
-//     console.log(`this is ${this.type}, and it speaks ${line}`)
-// };
-//
-// let object = new class {
-//     getWord() { console.log('hello')}
-// };
-//
-// let fuzzy = new Rabbit("fuzzy");
-// fuzzy.talk();
-//
-// console.log(fuzzy instanceof Rabbit);
-// console.log(Object.getPrototypeOf(Rabbit));
-// console.log(Object.getPrototypeOf(Rabbit.prototype));
-// console.log(Rabbit.prototype);
+function Person(name) {
+    this.name = name;
+    this.fullNa = () => {
+        return 'hello ' + 'world'
+    };
+    // console.log(this)
+}
 
-// function Human(firstName, lastName) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.fullName = () => {
-//         return this.firstName + this.lastName;
-//     }
-// }
-
-Human.prototype.fullName = function () {
-  return this.lastName + this.firstName;
-};
-let test = new Human('t', 'est');
-console.log(test.fullName());
-
-test = {
-    name: 'sd'
-};
+// the built-in function in Person can override function in prototype
+// Person.prototype.fullName = () => 'This';
+Object.prototype.fullName = () => 'This from Object';
+// Person.lastName = 'like Class Variable';
+Function.prototype.lastName = 'like Class Variable';
+test_brad = new Person('Brad');
+console.log(test_brad.fullName());
