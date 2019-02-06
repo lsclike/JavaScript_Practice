@@ -4,7 +4,9 @@ function Person(firstName, lastName, dob) {
     this.fullNa = () => {
         return 'hello ' + 'world'
     };
+
    this.birthday = new Date(dob);
+   this.secrete = 'blabla';
     // this.calculateAge = function(){
     //    const diff = Date.now() - this.birthday.getTime();
     //    const ageDate = new Date(diff);
@@ -18,9 +20,10 @@ Person.prototype.calculateAge = function(){
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 };
 
-Person.prototype.fullName = function(){
-    return `${this.firstName} ${this.lastName}`
-};
+
+// Person.prototype.fullName = function(){
+//     return `${this.firstName} ${this.lastName}`
+// };
 
 // the built-in function in Person can override function in prototype
 // Person.prototype.fullName = () => 'This';
