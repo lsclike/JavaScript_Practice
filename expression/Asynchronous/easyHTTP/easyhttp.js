@@ -10,6 +10,16 @@ function EasyHTTP() {
             }
         };
         this.http.send();
+    };
+    
+    this.post = function (url, data, cb) {
+        this.http.open('POST', url, true);
+        this.http.setRequestHeader('Content-type', 'application/json');
+        this.http.onload = () => {
+            // return this.status = 201
+            cb(null, this.http.responseText)
+        };
+        this.http.send(JSON.stringify(data));
     }
 }
 
