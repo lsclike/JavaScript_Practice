@@ -17,12 +17,16 @@ function EasyHTTP() {
         this.http.setRequestHeader('Content-type', 'application/json');
         this.http.onload = () => {
             // return this.status = 201
-            cb(null, this.http.responseText)
+            if (this.http.status !== 201){
+                cb('Error' + this.http.status)
+            }else {
+                cb(null, this.http.responseText)
+            }
+
         };
         this.http.send(JSON.stringify(data));
     }
 }
-
 // EasyHTTP.prototype.get = function (url) {
 //     this.http.open('GET', url, true);
 //     this.http.onload = function () {
