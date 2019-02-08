@@ -41,3 +41,7 @@ promise.then((img) => {
 }).catch((e) => {
     console.log(e)
 });
+
+test = [2, 4, 6, 8, 10];
+result = test.reduce((pre, cur) => pre+cur, 0);
+console.log(result);
