@@ -40,4 +40,4 @@ promise.then((img) => {
     document.body.appendChild(img)
 }).catch((e) => {
     console.log(e)
-})
+});
