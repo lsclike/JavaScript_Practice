@@ -42,6 +42,7 @@ promise.then((img) => {
     console.log(e)
 });
 
+// Practice reduce idea
 test = [2, 4, 6, 8, 10];
 result = test.reduce((pre, cur) => pre+cur, 0);
 console.log(result);
