@@ -18,6 +18,7 @@ function anyMulti(){
 }
 
 anyMulti.call({numbers: [1, 2, 3], multi: 3});
+
 function returnTest(){
     console.log('return test');
     let result = 9;
