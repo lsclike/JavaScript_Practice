@@ -27,5 +27,6 @@ FunctionCell.staticTalk = function(){
 
 test = new Cell(2,3);
 function_test = new FunctionCell(4, 5);
+//notice the difference for the place of function in both class cell and functionCell
 console.log(test);
-console.log(FunctionCell.staticTalk());
+console.log(function_test);

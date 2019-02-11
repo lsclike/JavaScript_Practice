@@ -5,7 +5,7 @@ function Person(firstName, lastName) {
 }
 
 Person.prototype.greetting = function () {
-    return `Hello there ${this.firstName}`
+    return `Hello there is ${this.firstName}`
 };
 
 const p1 = new Person('Brad', 'Peter');
@@ -26,5 +26,5 @@ Customer.prototype.greetting = function(){
     return 'come from Customer prototype'
 };
 
-console.log(customer1.greetting());
+console.log(customer1);
 console.log(Object.getPrototypeOf(customer1));
