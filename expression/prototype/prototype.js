@@ -1,6 +1,6 @@
 function Person(firstName, lastName, dob) {
     this.firstName = firstName;
-    this.lastName = lastName;
+    // this.lastName = lastName;
     this.fullNa = () => {
         return 'hello ' + 'world'
     };
@@ -31,4 +31,4 @@ Object.prototype.fullName = () => 'fullName from Object';
 Function.prototype.lastName = 'this lastName from function prototype';
 test_brad = new Person('Brad', 'Peter', '9-10-1993');
 // console.log(test_brad.calculateAge(test_brad.birthday));
-console.log(test_brad.fullName());
+console.log(test_brad.lastName);

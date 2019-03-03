@@ -27,4 +27,4 @@ Customer.prototype.greetting = function(){
 };
 
 console.log(customer1);
-console.log(Object.getPrototypeOf(customer1));
+console.log(customer1.__proto__);

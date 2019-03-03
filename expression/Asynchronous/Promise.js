@@ -1,6 +1,6 @@
 let fifty = Promise.resolve(50);
 console.log(fifty);
-fifty.then(value => console.log(value))
+fifty.then(value => console.log(value));
 
 
 function practicalPromise(name, number) {

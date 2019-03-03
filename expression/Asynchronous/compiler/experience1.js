@@ -16,7 +16,7 @@ c = {
 a = 10;
 b = 30;
 
-a += foo();             // 30
-b += c.bar;             // 11
+a += foo();
+b += c.bar;
 
 console.log( a + b );   // 42
