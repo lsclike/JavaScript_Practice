@@ -10,23 +10,33 @@
 // const items = document.getElementsByClassName('collection-item');
 // items[0].style.background = 'black';
 //since htmlCollection is not Array
-const listItem = document.querySelector('ul').getElementsByClassName('collection-item');
+// const listItem = document.querySelector('ul').getElementsByClassName('collection-item');
 // convert collection to array
-const arrayListItem = Array.from(listItem);
-arrayListItem.forEach( (li, index) =>
-{
-    console.log(li.className);
-    li.textContent = String(index);
-});
-
-const nodeList = document.querySelectorAll('li.collection-item');
-const liOdd = document.querySelectorAll('po li:nth-child(odd)');
-const liEven = document.querySelectorAll('li:nth-child(even)');
-
-liOdd.forEach(li => {
-    li.style.background = "red";
-});
+// const arrayListItem = Array.from(listItem);
+// arrayListItem.forEach( (li, index) =>
+// {
+//     console.log(li.className);
+//     li.textContent = String(index);
+// });
+//
+// const nodeList = document.querySelectorAll('li.collection-item');
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even)');
+//
+// liOdd.forEach(li => {
+//     li.style.background = "red";
+// });
 
 // liEven.forEach(li => {
 //     li.style.background = "blue"
 // });
+
+let val;
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelectorAll('li.collection-item:first');
+
+// Get child nodes
+val = list.childNodes;
+
+// Get children element nodes
+val = list.children[1].nodeName;
