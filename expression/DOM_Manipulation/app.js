@@ -74,10 +74,17 @@
 // const lis = document.querySelectorAll('li');
 // const list = document.querySelector('ul');
 
-document.querySelector('.clear-tasks').addEventListener('click', onClick);
-
+document.querySelector('.clear-tasks').addEventListener('mouseover', onClick);
+let state = false;
 function onClick(e) {
     console.log('Hello World');
+    if (!state){
+        e.target.innerText = 'Hello';
+    } else {
+        e.target.innerText = 'Click';
+    }
+    state = !state;
+};
+
     // let test = e;
     // console.log(e);
-}
