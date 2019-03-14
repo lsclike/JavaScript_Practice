@@ -74,17 +74,32 @@
 // const lis = document.querySelectorAll('li');
 // const list = document.querySelector('ul');
 
-document.querySelector('.clear-tasks').addEventListener('mouseover', onClick);
-let state = false;
-function onClick(e) {
-    console.log('Hello World');
-    if (!state){
-        e.target.innerText = 'Hello';
-    } else {
-        e.target.innerText = 'Click';
-    }
-    state = !state;
-};
+// document.querySelector('.clear-tasks').addEventListener('mouseover', onClick);
+// let state = false;
+// function onClick(e) {
+//     console.log('Hello World');
+//     if (!state){
+//         e.target.innerText = 'Hello';
+//     } else {
+//         e.target.innerText = 'Click';
+//     }
+//     state = !state;
+// };
 
-    // let test = e;
-    // console.log(e);
+// Event library
+const clearBtn = document.querySelector('.clear-tasks');
+const card = document.querySelector('.card');
+const head = document.querySelector('h5');
+// Click
+// clearBtn.addEventListener('click', runEvent);
+// clearBtn.addEventListener('dblclick', runEvent);
+// clearBtn.addEventListener('mousedown ', runEvent);
+// clearBtn.addEventListener('mouseenter ', runEvent);
+// clearBtn.addEventListener('mouseleave ', runEvent);
+// clearBtn.addEventListener('mouseover ', runEvent);
+// clearBtn.addEventListener('mouseout ', runEvent);
+clearBtn.addEventListener('mouseup', runEvent);
+//Event Function
+function runEvent(e) {
+    console.log(`EVENT TYPE: ${e.type}`);
+}
