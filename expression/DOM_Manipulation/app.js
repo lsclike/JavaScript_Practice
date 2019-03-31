@@ -102,4 +102,10 @@ clearBtn.addEventListener('mouseup', runEvent);
 //Event Function
 function runEvent(e) {
     console.log(`EVENT TYPE: ${e.type}`);
+    let tasksTitle = document.querySelector('#task-title');
+    tasksTitle.innerText = `x: ${e.offsetX}, y: ${e.offsetY}`;
+    document.body.style.background = `rgb(${e.offsetX}, ${e.offsetY}, 108) `
 }
+
+//Mousemove
+card.addEventListener('mousemove', runEvent);
